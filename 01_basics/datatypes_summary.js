@@ -42,3 +42,31 @@ console.log(typeof myFunction);
 // https://262.ecma-international.org/5.1/#sec-11.4.3
 
 //JavaScript is dynamically typed language
+
+//*********************************Memory******************************************** */
+
+//Stack(primitive). <copy>
+//Heap(Non-Primitive) <reference>
+
+//Stack
+let gharName = "Sumant"
+
+let clgName = gharName
+clgName = "Sumo"
+
+console.log(gharName);
+console.log(clgName);
+
+
+//Heap
+let userOne = {
+    email: "user@gmail.com",
+    num: 11
+}
+
+let userTwo = userOne
+
+userTwo.email = "sumant@gmail.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
